@@ -20,8 +20,8 @@ foreach ($filez as $file){
 ?>
  
  <item>
-  <title><?php echo htmlentities($event_name);?></title>
-  <description><?php echo htmlentities($event_name);?></description>
+  <title><![CDATA[<?php echo htmlentities($event_name);?>]]></title>
+  <description><![CDATA[<?php echo htmlentities($event_name);?>]]></description>
   <link>http://concerts.musique-libre.org/?nod=<?php echo floatval($event_guid);?></link>
   <guid isPermaLink="true"><?php echo floatval($event_guid);?></guid>
   <pubDate><?php echo htmlentities($event_date);?></pubDate>
